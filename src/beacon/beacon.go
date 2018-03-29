@@ -5,6 +5,7 @@ import (
     "io/ioutil"
 
     "github.com/getlantern/systray"
+   // "github.com/mikepb/go-serial"
 )
 
 var (
@@ -25,6 +26,7 @@ func onReady() {
     busy := systray.AddMenuItem("Busy", "Don't bother me, I'm busy")
     away := systray.AddMenuItem("Away", "Up up and away")
     systray.AddSeparator()
+    // Going to list all serial devices here
     quit := systray.AddMenuItem("Quit", "Let's get out of here")
 
     go func() {
